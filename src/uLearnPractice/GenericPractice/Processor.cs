@@ -1,4 +1,4 @@
-﻿namespace ConsoleApplication1
+﻿namespace GenericPractice
 {
     public interface IProcessor
     {
