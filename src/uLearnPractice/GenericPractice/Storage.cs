@@ -18,7 +18,7 @@ namespace GenericPractice
         public T Create<T>() where T : new()
         {
             var entity = new T();
-            var guid = new Guid();
+            var guid = Guid.NewGuid();
             Storage[guid] = entity;
             return entity;
         }
