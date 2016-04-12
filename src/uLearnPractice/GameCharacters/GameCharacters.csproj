@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ability.cs" />
+    <Compile Include="Bane.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Characteristic.cs" />
+    <Compile Include="Extensions\AbilityExtensions.cs" />
+    <Compile Include="Extensions\BaneExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
