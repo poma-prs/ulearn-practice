@@ -54,6 +54,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GameCharactersTests.cs" />
     <Compile Include="ProcessorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StorageTests.cs" />
@@ -62,6 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GameCharacters\GameCharacters.csproj">
+      <Project>{B01BA070-6D51-4086-8898-A1FF3D956D83}</Project>
+      <Name>GameCharacters</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GenericPractice\GenericPractice.csproj">
       <Project>{1C1108B7-ACE4-480E-8738-F99C394FA7C5}</Project>
       <Name>GenericPractice</Name>

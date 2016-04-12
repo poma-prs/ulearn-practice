@@ -16,7 +16,7 @@ namespace GameCharacters.Extensions
 
         public static IAbility<T> Merge<T>(this IAbility<T> ability, IAbility<T> other)
         {
-            return ability.GetAbilities().Aggregate(other, (a, b) => new Ability<T>(b.Duration, b.UpdateFunc, a));
+            return ability.GetAbilities().Aggregate(other, (a, b) => new Ability<T>(b.Cooldown, b.UpdateFunc, b.Duration, a));
         }
 
         public static IBane<T> ToBane<T>(this IAbility<T> ability)
